@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb_clone</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="search">
+        <div id="a1"><b>Anywhere</b></div>
+        <div id="a2"><b>Anyweek</b></div>
+        <div id="a3">Add guests</div>
+        <div id="s1"></div>
+      </div>
+      <div id="airhome">Airbnb your home</div>
+      <div id="globe"></div>
+      <div id="signup">
+        <div id="lbtn"></div>
+        <div id="acc"></div>
+      </div>
+    </header>
+    <section id="sc-1">
+      <div id="rooms" onclick="roomsopen()"></div>
+      <div id="av" onclick="avopen()"></div>
+      <div id="lf" onclick="lfopen()"></div>
+      <div id="omg" onclick="omgopen()"></div>
+      <div id="th5" onclick="thopen()"></div>
+      <div id="beachf" onclick="beachfopen()"></div>
+      <div id="np" onclick="npopen()"></div>
+      <div id="cabins" onclick="cabinsopen()"></div>
+      <div id="countryside" onclick="countrysideopen()"></div>
+      <div id="farms" onclick="farmsopen()"></div>
+      <div id="arbtn">></div>
+    </section>
+    <main id="main">
+      <img src="https://a0.muscache.com/im/pictures/8fb5846e-bb22-43d0-97f7-8a53aa86880f.jpg?im_w=720"  id="img1" onclick="fetchData1()"></img>
+      <img  src="https://a0.muscache.com/im/pictures/miso/Hosting-804959254707180514/original/fdba3a5f-da62-4b50-83ea-517639ba1385.jpeg?im_w=720" id="img2" onclick="fetchData2()"></img>
+      <img src="https://a0.muscache.com/im/pictures/8d8639bd-f300-43f2-b70b-8a6d1ae1a97f.jpg?im_w=720" id="img3" onclick="fetchData3()"></img>
+      <div src="" id="c-1">
+        <div class="fir-li">Phong Thổ District, Vietnam</div>
+        <div class="sec-li">3,210 kilometres away</div>
+        <div class="thi-li">8–13 Dec</div>
+        <div class="four-li"><b>₹4,701</b>night</div>
+      </div>
+      <div id="c-2">
+        <div class="fir-li">Jibhi, India</div>
+        <div class="sec-li"> 1,473 kilometres away</div>
+        <div class="thi-li">6–11 Jan</div>
+        <div class="four-li"><b>₹12,968</b>night</div>
+      </div>
+      <div id="c-3">
+        <div class="fir-li">Lonavla, India</div>
+        <div class="sec-li">77 kilometres away</div>
+        <div class="thi-li">11–16 Dec</div>
+        <div class="four-li"><b> ₹5,592 </b>night</div>
+      </div>
+      <img src="https://a0.muscache.com/im/pictures/83fcd691-fb68-45a4-8040-cc0d435e2536.jpg?im_w=720" alt="" onclick="fetchData4()">
+      <img src="https://a0.muscache.com/im/pictures/7998c806-21f2-48a4-9f1f-b877236d6ed8.jpg?im_w=720" alt="" onclick="fetchData5()">
+      <img src="https://a0.muscache.com/im/pictures/64775391-56ed-4d33-bb63-a08d719dbd62.jpg?im_w=720" alt="" onclick="fetchData6()">
+      <div id="c-4">
+        <div class="fir-li">Chikkamagaluru, India</div>
+        <div class="sec-li">691 kilometres away</div>
+        <div class="thi-li"> 17–22 Dec</div>
+        <div class="four-li"><b>₹7,987</b>night</div>
+      </div>
+      <div id="c-5">
+        <div class="fir-li">Tambon Su Thep, Thailand</div>
+        <div class="sec-li"> 2,745 kilometres away</div>
+        <div class="thi-li">2–7 Jan</div>
+        <div class="four-li"><b>₹4,072</b>night</div>
+      </div>
+      <div id="c-6">
+        <div class="fir-li">Gangtok, India</div>
+        <div class="sec-li">1,857 kilometres away</div>
+        <div class="thi-li">4–9 Jan</div>
+        <div class="four-li"><b>₹5,249</b>night</div>
+      </div>
+    </main>
+    <footer>
+      <div id="f1">
+        @ 2023 Airbnb,inc. | Privacy | Terms | Sitemap | Company details |
+        Destinations
+      </div>
+      <div id="g"></div>
+      <div id="f2">English(IN) $ DOLLAR Support & Resources</div>
+    </footer>
+    <script>
+      let rooms=document.getElementById("rooms");
+      let av=document.getElementById("av");
+      let lf =document.getElementById("lf");
+      let omg=document.getElementById("omg");
+      let th=document.getElementById("th5");
+      let beachf=document.getElementById("beachf");
+      let np=document.getElementById("np");
+      let cabins=document.getElementById("cabins");
+      let countryside=document.getElementById("countryside");
+      let farms=document.getElementById("farms");
+      
+function roomsopen(){
+  window.location.href="/"
+}
+function avopen(){
+  window.location.href="/amazingviews"
+}
+function lfopen(){
+  window.location.href="/lakefront"
+}
+function omgopen(){
+  window.location.href="/omg"
+}
+function thopen(){
+  window.location.href="/tinyhomes"
+}
+function beachfopen(){
+  window.location.href="/beachfronts"
+}
+function npopen(){
+  window.location.href="/nationalparks"
+}
+function cabinsopen(){
+  window.location.href="/cabins"
+}
+function countrysideopen(){
+  window.location.href="/countryside"
+}
+function farmsopen(){
+  window.location.href="/farms"
+}
+function fetchData1() {
+      const id="1"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+           window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+
+          
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+      }
+      function fetchData2() {
+      const id="2"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData3() {
+      const id="3"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData4() {
+      const id="4"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData5() {
+      const id="5"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData6() {
+      const id="6"
+      fetch(`/tinyhomes/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("tinyhomes");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    
+    </script>
+  </body>
+</html>

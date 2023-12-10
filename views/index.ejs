@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb_clone</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="search">
+        <div id="a1"><b>Anywhere</b></div>
+        <div id="a2"><b>Anyweek</b></div>
+        <div id="a3">Add guests</div>
+        <div id="s1"></div>
+      </div>
+      <div id="airhome">Airbnb your home</div>
+      <div id="globe"></div>
+      <div id="signup">
+        <div id="lbtn"></div>
+        <div id="acc"></div>
+      </div>
+    </header>
+    <section id="sc-1">
+      <div id="rooms1" onclick="roomsopen()"></div>
+      <div id="av" onclick="avopen()"></div>
+      <div id="lf" onclick="lfopen()"></div>
+      <div id="omg" onclick="omgopen()"></div>
+      <div id="th" onclick="thopen()"></div>
+      <div id="beachf" onclick="beachfopen()"></div>
+      <div id="np" onclick="npopen()"></div>
+      <div id="cabins" onclick="cabinsopen()"></div>
+      <div id="countryside" onclick="countrysideopen()"></div>
+      <div id="farms" onclick="farmsopen()"></div>
+      <div id="arbtn">></div>
+    </section>
+    <main id="main">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-51809333/original/0da70267-d9da-4efb-9123-2714b651c9fd.jpeg?im_w=720"  id="img1" onclick="fetchData1()"></img>
+      <img  src="https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=720" id="img2" onclick="fetchData2()"></img>
+      <img src="https://a0.muscache.com/im/pictures/airflow/Hosting-1197834/original/2c2cf7d3-cfa7-46f6-b9d7-cfd88fef90eb.jpg?im_w=720" id="img3" onclick="fetchData3()"></img>
+      <div src="" id="c-1">
+        <div class="fir-li">Milan, Italy</div>
+        <div class="sec-li">Stay with Valentina, · Interior designer</div>
+        <div class="thi-li">10–15 Dec</div>
+        <div class="four-li"><b>₹8,254</b>night</div>
+      </div>
+      <div id="c-2">
+        <div class="fir-li">Nantes, France</div>
+        <div class="sec-li">Stay with Golwen</div>
+        <div class="thi-li">14–19 Dec</div>
+        <div class="four-li"><b>₹6,460</b>night</div>
+      </div>
+      <div id="c-3">
+        <div class="fir-li">Edinburgh, UK</div>
+        <div class="sec-li">Stay with Felicitas, · Parent & tour guide</div>
+        <div class="thi-li"> 8–13 Jan</div>
+        <div class="four-li"><b>₹17,939</b>night</div>
+      </div>
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-792510074034625170/original/6a17e24d-d7c2-4bc8-ac29-7448d25adfdc.jpeg?im_w=720" id="img4" onclick="fetchData4()">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-651792739552139367/original/4451b587-769a-44c6-9eb4-0e6500f42c42.jpeg?im_w=720" id="img5" onclick="fetchData5()">
+      <img src="https://a0.muscache.com/im/pictures/3a0edcbf-4148-4939-bac6-2cf92d21d80c.jpg?im_w=720" id="img6" onclick="fetchData6()">
+      <div id="c-4">
+        <div class="fir-li">London, UK</div>
+        <div class="sec-li">Stay with Mingshu, · Accounting</div>
+        <div class="thi-li">2–7 Jan</div>
+        <div class="four-li"><b>₹6,111</b>night</div>
+      </div>
+      <div id="c-5">
+        <div class="fir-li">Kecamatan Kuta Utara, Indonesia</div>
+        <div class="sec-li">Stay with Olive</div>
+        <div class="thi-li">9–14 Dec</div>
+        <div class="four-li"><b>₹5,208</b>night</div>
+      </div>
+      <div id="c-6">
+        <div class="fir-li">London, UK</div>
+        <div class="sec-li">Stay with Gene, · Hostess</div>
+        <div class="thi-li">22–27 Dec</div>
+        <div class="four-li"><b>₹4,902 </b>night</div>
+      </div>
+    </main>
+    <footer>
+      <div id="f1">
+        @ 2023 Airbnb,inc. | Privacy | Terms | Sitemap | Company details |
+        Destinations
+      </div>
+      <div id="g"></div>
+      <div id="f2">English(IN) $ DOLLAR Support & Resources</div>
+    </footer>
+    <script>
+      let rooms=document.getElementById("rooms");
+      let av=document.getElementById("av");
+      let lf =document.getElementById("lf");
+      let omg=document.getElementById("omg");
+      let th=document.getElementById("th");
+      let beachf=document.getElementById("beachf");
+      let np=document.getElementById("np");
+      let cabins=document.getElementById("cabins");
+      let countryside=document.getElementById("countryside");
+      let farms=document.getElementById("farms");
+      // document.getElementById('img1').addEventListener('click', bookingopen);
+      // document.getElementById('img2').addEventListener('click', bookingopen);
+      // document.getElementById('img3').addEventListener('click', bookingopen);
+      // document.getElementById('img4').addEventListener('click', bookingopen);
+      // document.getElementById('img5').addEventListener('click', bookingopen);
+      // document.getElementById('img6').addEventListener('click', bookingopen);
+function roomsopen(){
+  window.location.href="/"
+}
+function avopen(){
+  window.location.href="/amazingviews"
+}
+function lfopen(){
+  window.location.href="/lakefront"
+}
+function omgopen(){
+  window.location.href="/omg"
+}
+function thopen(){
+  window.location.href="/tinyhomes"
+}
+function beachfopen(){
+  window.location.href="/beachfronts"
+}
+function npopen(){
+  window.location.href="/nationalparks"
+}
+function cabinsopen(){
+  window.location.href="/cabins"
+}
+function countrysideopen(){
+  window.location.href="/countryside"
+}
+function farmsopen(){
+  window.location.href="/farms"
+}
+
+
+
+// document.addEventListener('DOMContentLoaded', fetchData);
+// function () {
+    // Add event listener to the button
+    
+    
+    // Function to fetch data from the backend
+   
+    // function displayData(data) {
+    // //     const dataContainer = document.getElementById('dataContainer');
+
+    // //     // Clear previou                     s data
+    // //     dataContainer.innerHTML = '';
+
+    // //     // Display each item in the data
+    //     data.forEach(item => {
+    //         console.log(JSON.stringify(item))
+    //     });
+    // }
+
+
+function fetchData1() {
+      const id="1"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+           window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+
+          
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+      }
+      function fetchData2() {
+      const id="2"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData3() {
+      const id="3"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData4() {
+      const id="4"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData5() {
+      const id="5"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData6() {
+      const id="6"
+      fetch(`/rooms/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("rooms");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    
+    </script>
+  </body>
+</html>

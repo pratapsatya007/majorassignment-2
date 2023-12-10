@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb_clone</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="search">
+        <div id="a1"><b>Anywhere</b></div>
+        <div id="a2"><b>Anyweek</b></div>
+        <div id="a3">Add guests</div>
+        <div id="s1"></div>
+      </div>
+      <div id="airhome">Airbnb your home</div>
+      <div id="globe"></div>
+      <div id="signup">
+        <div id="lbtn"></div>
+        <div id="acc"></div>
+      </div>
+    </header>
+    <section id="sc-1">
+      <div id="rooms" onclick="roomsopen()"></div>
+      <div id="av" onclick="avopen()"></div>
+      <div id="lf" onclick="lfopen()"></div>
+      <div id="omg" onclick="omgopen()"></div>
+      <div id="th" onclick="thopen()"></div>
+      <div id="beachf6" onclick="beachfopen()"></div>
+      <div id="np" onclick="npopen()"></div>
+      <div id="cabins" onclick="cabinsopen()"></div>
+      <div id="countryside" onclick="countrysideopen()"></div>
+      <div id="farms" onclick="farmsopen()"></div>
+      <div id="arbtn">></div>
+    </section>
+    <main id="main">
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-912305060013575560/original/eb4120bb-e281-41eb-bef5-7dac96eb90f2.jpeg?im_w=720"  id="img1" onclick="fetchData1()"></img>
+      <img  src="https://a0.muscache.com/im/pictures/d32fbb06-557c-4381-97e9-0746d986f8d0.jpg?im_w=720" id="img2" onclick="fetchData2()"></img>
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-865586313174960641/original/4950f651-ad23-4277-a5d1-a429019b512e.jpeg?im_w=720" id="img3" onclick="fetchData3()"></img>
+      <div src="" id="c-1">
+        <div class="fir-li">Dhonakulhi, Maldives</div>
+        <div class="sec-li"> 1,350 kilometres away</div>
+        <div class="thi-li"> 8–13 Dec</div>
+        <div class="four-li"><b> ₹7,36,881 </b>night</div>
+      </div>
+      <div id="c-2">
+        <div class="fir-li">Ko Tao, Thailand</div>
+        <div class="sec-li">3,067 kilometres away</div>
+        <div class="thi-li"> 17–22 Apr</div>
+        <div class="four-li"><b>₹72,405</b>night</div>
+      </div>
+      <div id="c-3">
+        <div class="fir-li">Maldives Islands, Maldives</div>
+        <div class="sec-li">1,683 kilometres away</div>
+        <div class="thi-li">15–20 Dec</div>
+        <div class="four-li"><b>₹40,845</b>night</div>
+      </div>
+      <img src="https://a0.muscache.com/im/pictures/miso/Hosting-39375812/original/68442b39-3f79-4d6a-917d-2459627bf112.jpeg?im_w=720" id="img4" onclick="fetchData4()">
+      <img src="https://a0.muscache.com/im/pictures/69ddb99f-9c28-4392-9a38-b7ac26fbc6c5.jpg?im_w=1200" id="img5" onclick="fetchData5()">
+      <img src="https://a0.muscache.com/im/pictures/005fb33b-6832-4e82-b4c5-76d6633b754f.jpg?im_w=720" id="img6" onclick="fetchData6()">
+      <div id="c-4">
+      <div class="fir-li">Unawatuna, Sri Lanka</div>
+      <div class="sec-li">1,653 kilometres away</div>
+      <div class="thi-li">13–18 Dec</div>
+      <div class="four-li"><b>₹9,779</b>night</div>
+    </div>
+    <div id="c-5">
+      <div class="fir-li">Morjim, India</div>
+      <div class="sec-li">384 kilometres away</div>
+      <div class="thi-li">  27 Jan – 1 Feb</div>
+      <div class="four-li"><b>₹25,000</b>night</div>
+    </div>
+    <div id="c-6">
+      <div class="fir-li">Nathon, Thailand</div>
+      <div class="sec-li">3,096 kilometres away</div>
+      <div class="thi-li">4–9 Mar</div>
+      <div class="four-li"><b>₹30,965</b>night</div>
+    </div>
+    </main>
+    <footer>
+      <div id="f1">
+        @ 2023 Airbnb,inc. | Privacy | Terms | Sitemap | Company details |
+        Destinations
+      </div>
+      <div id="g"></div>
+      <div id="f2">English(IN) $ DOLLAR Support & Resources</div>
+    </footer>
+    <script>
+      let rooms=document.getElementById("rooms");
+      let av=document.getElementById("av");
+      let lf =document.getElementById("lf");
+      let omg=document.getElementById("omg");
+      let th=document.getElementById("th");
+      let beachf=document.getElementById("beachf6");
+      let np=document.getElementById("np");
+      let cabins=document.getElementById("cabins");
+      let countryside=document.getElementById("countryside");
+      let farms=document.getElementById("farms");
+      
+function roomsopen(){
+  window.location.href="/"
+}
+function avopen(){
+  window.location.href="/amazingviews"
+}
+function lfopen(){
+  window.location.href="/lakefront"
+}
+function omgopen(){
+  window.location.href="/omg"
+}
+function thopen(){
+  window.location.href="/tinyhomes"
+}
+function beachfopen(){
+  window.location.href="/beachfronts"
+}
+function npopen(){
+  window.location.href="/nationalparks"
+}
+function cabinsopen(){
+  window.location.href="/cabins"
+}
+function countrysideopen(){
+  window.location.href="/countryside"
+}
+function farmsopen(){
+  window.location.href="/farms"
+}
+function fetchData1() {
+      const id="1"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+           window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+
+          
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+      }
+      function fetchData2() {
+      const id="2"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData3() {
+      const id="3"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData4() {
+      const id="4"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData5() {
+      const id="5"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    function fetchData6() {
+      const id="6"
+      fetch(`/beachfront/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            // console.log('Data received from backend:', data);
+            window.location.href="/bookingpage?id=" +encodeURIComponent(id)+"&var="+encodeURIComponent("beachfront");
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    }
+    
+    </script>
+  </body>
+</html>

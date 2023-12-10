@@ -1,0 +1,375 @@
+* {
+  /* removing default css properties*/
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 0px solid black;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+#logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("./_1511452487_364_Airbnb-mobile.jpg");
+  background-size: cover;
+  margin-left: 100px;
+}
+#logo:hover {
+  cursor: pointer;
+}
+#search {
+  width: 350px;
+  height: 50px;
+  padding: 7px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  margin-left: 300px;
+  box-shadow: 2px 2px 2px gray;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#a1 {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  font-weight: bolder;
+  margin-right: 2px;
+  padding-top: 8px;
+  border-right: 2px solid grey;
+}
+#a2 {
+  width: 85px;
+  height: 35px;
+  margin-right: 2px;
+  border-right: 2px solid grey;
+  font-weight: bolder;
+  padding-top: 8px;
+}
+#a3 {
+  width: 90px;
+  height: 35px;
+  margin-right: 5px;
+  font-weight: 300;
+  padding-top: 8px;
+  border-right: 2px solid grey;
+}
+#s1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-radius: 100%;
+  background-color: cadetblue;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/245532/58-512.png");
+  background-size: cover;
+}
+#airhome {
+  width: 160px;
+  height: 50px;
+  font-weight: bolder;
+  padding: 15px 5px 2px 10px;
+  margin-left: 170px;
+  border-radius: 20px;
+}
+#airhome:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+#globe {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-right: 15px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+}
+#globe:hover {
+  box-shadow: 2px 2px 1px grey;
+  cursor: pointer;
+}
+#signup {
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+#lbtn {
+  width: 25px;
+  height: 25px;
+  background-image: url("https://t4.ftcdn.net/jpg/01/09/84/11/360_F_109841191_B1qcKCxRwwt4DWIBpXD7bc4IPcozRBzT.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+#lbtn:hover {
+  cursor: pointer;
+}
+#acc {
+  width: 35px;
+  height: 35px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/46/83/96/240_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg");
+  background-size: cover;
+  border-radius: 100%;
+}
+#acc:hover {
+  cursor: pointer;
+}
+#sc-1 {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  position: fixed;
+  top: 80px;
+}
+#rooms {
+  margin-left: 100px;
+  width: 75px;
+  height: 75px;
+  background-image: url("rooms.jpg");
+  background-size: cover;
+}
+#rooms1 {
+  margin-left: 100px;
+  width: 75px;
+  height: 75px;
+  border-bottom: 2px solid black;
+  background-image: url("rooms.jpg");
+  background-size: cover;
+}
+#av {
+  width: 90px;
+  height: 75px;
+  background-image: url("amazing\ views.jpg");
+  background-size: cover;
+}
+#av2 {
+  width: 90px;
+  height: 75px;
+  background-image: url("amazing\ views.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#lf {
+  width: 75px;
+  height: 75px;
+  background-image: url("./lakefront.jpg");
+  background-size: cover;
+}
+#lf3 {
+  width: 75px;
+  height: 75px;
+  background-image: url("./lakefront.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#omg {
+  width: 75px;
+  height: 68px;
+  margin-top: 7px;
+  background-image: url("./omg.jpg");
+  background-size: cover;
+  background-color: aqua;
+}
+#omg4 {
+  width: 75px;
+  height: 68px;
+  margin-top: 7px;
+  background-image: url("./omg.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#th {
+  width: 85px;
+  height: 75px;
+  background-image: url("./tinyhomes.jpg");
+  background-size: cover;
+}
+#th5 {
+  width: 75px;
+  height: 57px;
+  margin-top: 7px;
+  background-image: url("./tinyhomes.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#beachf {
+  width: 88px;
+  height: 75px;
+  background-image: url("./beachfront.jpg");
+  background-size: cover;
+}
+#beachf6 {
+  width: 88px;
+  height: 75px;
+  background-image: url("./beachfront.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#np {
+  width: 90px;
+  height: 75px;
+  background-image: url("./national\ parks.jpg");
+  background-size: cover;
+}
+#np7 {
+  width: 90px;
+  height: 75px;
+  background-image: url("./national\ parks.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#cabins {
+  width: 75px;
+  height: 75px;
+  margin-top: 3px;
+  background-image: url("./cab.jpg");
+  background-size: cover;
+}
+#cabins8 {
+  width: 75px;
+  height: 75px;
+  margin-top: 3px;
+  background-image: url("./cab.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#countryside {
+  width: 85px;
+  height: 75px;
+  background-image: url("./countryside.jpg");
+  background-size: cover;
+}
+#countryside9 {
+  width: 85px;
+  height: 75px;
+  background-image: url("./countryside.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+#farms {
+  width: 75px;
+  height: 75px;
+  background-image: url("./farms.jpg");
+  background-size: cover;
+}
+#farms0 {
+  width: 75px;
+  height: 75px;
+  background-image: url("./farms.jpg");
+  background-size: cover;
+  border-bottom: 2px solid black;
+}
+
+#arbtn {
+  width: 40px;
+  height: 40px;
+  border: 3px solid grey;
+  border-radius: 60%;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 33px;
+}
+/*main*/
+main {
+  width: 1275px;
+  height: 1000px;
+  margin: 200px 100px 55px 100px;
+  padding: 15px;
+  top: 200px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 300px 150px 300px 150px;
+  grid-gap: 20px;
+}
+main img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+#c-1 {
+  padding: 10px;
+}
+#c-2 {
+  padding: 10px;
+}
+#c-3 {
+  padding: 10px;
+}
+#c-4 {
+  padding: 10px;
+}
+#c-5 {
+  padding: 10px;
+}
+#c-6 {
+  padding: 10px;
+}
+/*footer*/
+footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  padding-left: 100px;
+  border-top: 2px solid grey;
+  box-shadow: 1px 1px 1px black;
+  background-color: white;
+  position: relative;
+  position: fixed;
+  top: 703px;
+  display: flex;
+}
+#f1 {
+  width: 600px;
+  height: 30px;
+  color: grey;
+  padding-top: 5px;
+}
+#f2 {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  padding-top: 5px;
+}
+#g {
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  position: absolute;
+  right: 460px;
+}
+.fir-li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.sec-li,
+.thi-li,
+.four-li {
+  color: grey;
+  font-size: 20px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/booking.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <div id="search">
+        <div id="a1"><b>Anywhere</b></div>
+        <div id="a2"><b>Anyweek</b></div>
+        <div id="a3">Add guests</div>
+        <div id="s1"></div>
+      </div>
+      <div id="airhome">Airbnb your home</div>
+      <div id="globe"></div>
+      <div id="signup">
+        <div id="lbtn"></div>
+        <div id="acc"></div>
+      </div>
+    </header>
+    <div id="heading"></div>
+    <section id="pics">
+      <img src="" id="bigpic"></img>
+      <div id="picsbox">
+        <img src="" id="img1"></img>
+        <img src="" id="img2"></img>
+        <img src="" id="img3"></img>
+        <img src="" id="img4"></img>
+      </div>
+    </section>
+    <div id="location">
+    </div>
+    <div id="roomdet"></div>
+    <h2 id="about">About this place
+    </h2>
+   
+    <div style="display: flex;">
+      <div ><p id="aboutdes"></p></div>
+      <section id="bookingsec">
+        <div id="price"></div>
+        <div id="bookingbox">
+          <div id="checkinbox">
+            <h3 style="font-size: 18px;font-weight: 700;margin-left: 35px;">CHECK-IN</h3>
+            <input type="date" name="" id="checkindate"  min="2023-12-10">
+          </div>
+          <div id="checkoutbox">
+            <h3 style="font-size: 18px;font-weight: 700;margin-left: 35px;">CHECKOUT
+            </h3>
+            <input type="date" name="" id="checkoutdate"  max="2023-12-31">
+          </div>
+          <div id="guestsbox">
+            <h3 style="font-size: 20px; font-weight: 700; margin-left: 25px;
+            ">GUESTS</h3>
+            <input type="number" id="guestnumber">
+          </div>
+        </div>
+        <button id="changedatebtn" onclick="reserveclick()">Reserve</button>
+      </section>
+    </div>
+    <section></section>
+    <footer>
+      <div id="f1">
+        @ 2023 Airbnb,inc. | Privacy | Terms | Sitemap | Company details |
+        Destinations
+      </div>
+      <div id="g"></div>
+      <div id="f2">English(IN) ₹ INR Support & Resources</div>
+    </footer>
+    <script>
+      var checkinDateInput = document.getElementById('checkindate');
+      var checkoutDateInput = document.getElementById('checkoutdate');
+      var guestnumber=document.getElementById("guestnumber");
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const id = urlParams.get('id');
+      const variable=urlParams.get("var")
+      document.addEventListener("DOMContentLoaded",function(){
+        fetch(`/${variable}/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            const dataforbookingpage=data;
+            let roomhead=document.getElementById("heading")
+      roomhead.innerText=dataforbookingpage.head
+      document.getElementById("bigpic").src=dataforbookingpage.imgsrc1
+      document.getElementById("img1").src=dataforbookingpage.imgsrc2
+      document.getElementById("img2").src=dataforbookingpage.imgsrc3
+      document.getElementById("img3").src=dataforbookingpage.imgsrc4
+      document.getElementById("img4").src=dataforbookingpage.imgsrc5
+      document.getElementById("location").innerText=dataforbookingpage.location
+      document.getElementById("roomdet").innerText=dataforbookingpage.details
+      document.getElementById("aboutdes").innerText=dataforbookingpage.about;
+      document.getElementById("price").innerText=dataforbookingpage.price
+        }) 
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    });
+    function reserveclick(){
+      var checkinDate = checkinDateInput.value;
+      var checkoutDate = checkoutDateInput.value;
+      var guestNumber=guestnumber.value
+      var m1=checkinDate.split("-")
+      var m2=checkoutDate.split("-")
+    var indate=m1[2]
+    var outdate=m2[2]
+    var datei=parseFloat(indate)
+    var dateo=parseFloat(outdate)
+    if(dateo-datei>0 && guestNumber>0){
+     window.location.href= "/bookingrequest?nights="+encodeURIComponent(dateo-datei)+"&guestsnumber="+encodeURIComponent(guestNumber)+"&id="+encodeURIComponent(id)+"&var="+encodeURIComponent(variable)
+    }
+    else{
+      alert("Enter vaild date / No.of guests")
+    }
+  }
+    </script>
+  </body>
+</html>

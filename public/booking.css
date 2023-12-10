@@ -1,0 +1,325 @@
+* {
+  /* removing default css properties*/
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 0px solid black;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+#logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("./_1511452487_364_Airbnb-mobile.jpg");
+  background-size: cover;
+  margin-left: 100px;
+}
+#logo:hover {
+  cursor: pointer;
+}
+#search {
+  width: 350px;
+  height: 50px;
+  padding: 7px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  margin-left: 300px;
+  box-shadow: 2px 2px 2px gray;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#a1 {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  font-weight: bolder;
+  margin-right: 2px;
+  padding-top: 8px;
+  border-right: 2px solid grey;
+}
+#a2 {
+  width: 85px;
+  height: 35px;
+  margin-right: 2px;
+  border-right: 2px solid grey;
+  font-weight: bolder;
+  padding-top: 8px;
+}
+#a3 {
+  width: 90px;
+  height: 35px;
+  margin-right: 5px;
+  font-weight: 300;
+  padding-top: 8px;
+  border-right: 2px solid grey;
+}
+#s1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-radius: 100%;
+  background-color: cadetblue;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/245532/58-512.png");
+  background-size: cover;
+}
+#airhome {
+  width: 160px;
+  height: 50px;
+  font-weight: bolder;
+  padding: 15px 5px 2px 10px;
+  margin-left: 170px;
+  border-radius: 20px;
+}
+#airhome:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+#globe {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-right: 15px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+}
+#globe:hover {
+  box-shadow: 2px 2px 1px grey;
+  cursor: pointer;
+}
+#signup {
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+#lbtn {
+  width: 25px;
+  height: 25px;
+  background-image: url("https://t4.ftcdn.net/jpg/01/09/84/11/360_F_109841191_B1qcKCxRwwt4DWIBpXD7bc4IPcozRBzT.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+#lbtn:hover {
+  cursor: pointer;
+}
+#acc {
+  width: 35px;
+  height: 35px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/46/83/96/240_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg");
+  background-size: cover;
+  border-radius: 100%;
+}
+#acc:hover {
+  cursor: pointer;
+}
+#heading {
+  margin-top: 150px;
+  margin-left: 140px;
+  width: 1200px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 800;
+}
+/* photos */
+#pics {
+  width: 80%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 140px;
+  background-color: rgb(213, 208, 208);
+  display: flex;
+  padding: 8px;
+
+  box-shadow: 2px 2px 2px 2px black;
+  gap: 10px;
+}
+#bigpic {
+  width: 500px;
+  height: 480px;
+  border: 2px solid rgb(74, 73, 73);
+}
+#picsbox {
+  width: 700px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 340px 350px;
+  grid-template-rows: 235px 235px;
+  grid-gap: 10px;
+}
+div img {
+  width: 340px;
+  height: 235px;
+  border: 2px solid rgb(74, 73, 73);
+}
+#location {
+  width: 500px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+#roomdet {
+  width: 600px;
+  height: 30px;
+  color: rgb(36, 32, 32);
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 140px;
+  margin-top: 5px;
+}
+#about {
+  width: 600px;
+  height: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-left: 140px;
+  margin-top: 40px;
+}
+#aboutdes {
+  width: 700px;
+  height: 60px;
+  color: rgb(32, 32, 32);
+  margin-left: 140px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#bookingsec {
+  width: 425px;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  /* margin-left: 870px; */
+  margin-left: 50px;
+}
+
+#price {
+  width: 200px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+#bookingbox {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 60px;
+  grid-gap: 20px;
+}
+#checkinbox {
+  width: 180px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+#checkoutbox {
+  width: 180px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+div input {
+  width: 150px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#guestsbox {
+  width: 150px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 120px;
+}
+#guestnumber {
+  width: 100px;
+  height: 20px;
+  margin-left: 17px;
+}
+#changedatebtn {
+  width: 150px;
+  height: 40px;
+  border: 2px solid rgb(250, 52, 66);
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(249, 50, 64);
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+#changedatebtn:hover {
+  cursor: pointer;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  padding-left: 100px;
+  border-top: 2px solid grey;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgb(223, 218, 218);
+  position: relative;
+  display: flex;
+}
+#f1 {
+  width: 600px;
+  height: 30px;
+  color: grey;
+  padding-top: 5px;
+}
+#f2 {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  padding-top: 5px;
+}
+#g {
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  position: absolute;
+  right: 460px;
+}
+.fir-li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.sec-li,
+.thi-li,
+.four-li {
+  color: grey;
+  font-size: 20px;
+}

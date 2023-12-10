@@ -1,0 +1,147 @@
+* {
+  /* removing default css properties*/
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 0px solid black;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+#logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("./_1511452487_364_Airbnb-mobile.jpg");
+  background-size: cover;
+  margin-left: 100px;
+}
+#logo:hover {
+  cursor: pointer;
+}
+main {
+  position: relative;
+}
+form {
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px black;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 150px;
+}
+#emailbox {
+  height: 40px;
+  border: 1px solid rgb(109, 100, 100);
+  font-size: 22px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+#namebox {
+  height: 40px;
+  border: 1px solid rgb(109, 100, 100);
+  font-size: 22px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#passwordbox {
+  height: 40px;
+  border: 1px solid rgb(109, 100, 100);
+  font-size: 22px;
+  margin-left: 50px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#signupbtn {
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(249, 50, 64);
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: 240px;
+  left: 190px;
+}
+/* confirmed page */
+#confirmed {
+  width: 15%;
+  height: 200px;
+  margin-top: 200px;
+  background-image: url("https://imgs.search.brave.com/4klzSU6XzTLZPaphjwFWVUyMOdfu80Qxvp85GLc3dr4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvOTQ2My85NDYz/MTUxLnBuZw");
+  background-size: cover;
+  margin-left: 630px;
+}
+#thankyou {
+  width: 500px;
+  height: 200px;
+  margin-top: 0px;
+  margin-left: 500px;
+  background-image: url("https://imgs.search.brave.com/8EBhjlZrIcpFYjxRfpsFd9gi2Xd2M-blr9N_lppLbqs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzk1LzA3Lzkx/LzM2MF9GXzI5NTA3/OTE1OV9TRmJ0RkxK/SHp5YmxMdmN6eDRG/allFbGlYcThJR3M1/Wi5qcGc");
+  background-size: cover;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  padding-left: 100px;
+  border-top: 2px solid grey;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgb(223, 218, 218);
+  position: relative;
+  display: flex;
+}
+#f1 {
+  width: 600px;
+  height: 30px;
+  color: grey;
+  padding-top: 5px;
+}
+#f2 {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  padding-top: 5px;
+}
+#g {
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  position: absolute;
+  right: 460px;
+}
+.fir-li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.sec-li,
+.thi-li,
+.four-li {
+  color: grey;
+  font-size: 20px;
+}

@@ -1,0 +1,205 @@
+* {
+  /* removing default css properties*/
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 0px solid black;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+#logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("./_1511452487_364_Airbnb-mobile.jpg");
+  background-size: cover;
+  margin-left: 100px;
+}
+#logo:hover {
+  cursor: pointer;
+}
+main {
+  position: relative;
+}
+form {
+  width: 500px;
+  height: 250px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px black;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 150px;
+}
+#emailbox {
+  height: 40px;
+  border: 1px solid rgb(109, 100, 100);
+  font-size: 22px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+#passwordbox {
+  height: 40px;
+  border: 1px solid rgb(109, 100, 100);
+  font-size: 22px;
+  margin-left: 50px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#loginbtn {
+  width: 210px;
+  height: 35px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(249, 50, 64);
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: 170px;
+  left: 150px;
+}
+#signupbtn {
+  color: rgb(44, 44, 249);
+  background-color: none;
+  position: absolute;
+  top: 220px;
+  left: 180px;
+}
+#signupbtn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+section {
+  width: 310px;
+  height: 270px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px black;
+  padding-left: 10px;
+  position: absolute;
+  right: 440px;
+  top: 0px;
+}
+h1 {
+  font-size: 24px;
+  padding-left: 60px;
+  padding-top: 10px;
+  font-weight: 1000;
+}
+#totalprice {
+  width: 280px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(89, 81, 81);
+  position: absolute;
+  top: 30px;
+  position: relative;
+  font-weight: 600;
+}
+#tprice {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  color: black;
+  font: size 19px;
+}
+#cleaningfee {
+  width: 280px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(89, 81, 81);
+  position: absolute;
+  top: 120px;
+  font-weight: 600;
+}
+#airbnbservicefee {
+  width: 280px;
+  height: 35px;
+  font-size: 20px;
+  color: rgb(89, 81, 81);
+  position: absolute;
+  border-bottom: 2px solid rgb(94, 93, 93);
+  top: 170px;
+  font-weight: 600;
+}
+#INR {
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(89, 81, 81);
+  position: absolute;
+  top: 210px;
+  font-weight: 1000;
+}
+#total {
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(32, 31, 31);
+  position: absolute;
+  top: 210px;
+  right: 10px;
+  font-weight: 1000;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  padding-left: 100px;
+  border-top: 2px solid grey;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgb(223, 218, 218);
+  position: relative;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+}
+#f1 {
+  width: 600px;
+  height: 30px;
+  color: grey;
+  padding-top: 5px;
+}
+#f2 {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  padding-top: 5px;
+}
+#g {
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+  background-image: url("https://cdn.imgbin.com/2/4/17/imgbin-globe-world-computer-icons-internet-globe-qg1ejxAgUWzkxPw1eHkb1H2Fz.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  position: absolute;
+  right: 460px;
+}
+.fir-li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.sec-li,
+.thi-li,
+.four-li {
+  color: grey;
+  font-size: 20px;
+}

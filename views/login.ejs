@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+    </header>
+    <main style="margin-top: 100px; width: 100%; height: 500px">
+      <form action="/auth/bookingrequest" method="post">
+        <input
+          type="email"
+          name="username"
+          id="emailbox"
+          size="30"
+          placeholder="enter your email"
+        />
+        <input
+          type="password"
+          name="password"
+          id="passwordbox"
+          size="30"
+          placeholder="enter your password"
+        />
+        <input type="submit" value="Confirm Booking" id="loginbtn" />
+        <a href="/register" id="signupbtn"> new?click to register </a>
+      </form>
+      <section>
+        <h1>Price details</h1>
+        <div id="totalprice">
+          <span id="price"></span>&nbsp;x&nbsp;<span id="nightsnumber"></span
+          >&nbsp;Nights<span id="tprice"></span>
+        </div>
+        <div id="cleaningfee">
+          Cleaning fee
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹1,795.76
+        </div>
+        <div id="airbnbservicefee">Airbnb service fee &nbsp;₹3,625.64</div>
+        <div id="INR">Total (INR)</div>
+        <div id="total"></div>
+      </section>
+      <footer>
+        <div id="f1">
+          @ 2023 Airbnb,inc. | Privacy | Terms | Sitemap | Company details |
+          Destinations
+        </div>
+        <div id="g"></div>
+        <div id="f2">English(IN) $ DOLLAR Support & Resources</div>
+      </footer>
+    </main>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const id = urlParams.get("id");
+      const variable = urlParams.get("var");
+      const nights = urlParams.get("nights");
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch(`/${variable}/${id}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            let price = parseFloat(data.price);
+
+            pricearr = data.price.split("");
+            p = "";
+            for (i = 1; i < pricearr.length; i++) {
+              if (pricearr[i] === " ") {
+                break;
+              }
+              if (pricearr[i] != ",") {
+                p += pricearr[i];
+              }
+            }
+            let cost = parseFloat(p);
+            document.getElementById("price").innerText = cost;
+            document.getElementById("nightsnumber").innerText = nights;
+            document.getElementById("tprice").innerText =
+              "₹" + cost * parseFloat(nights);
+            let totalprice = add(cost * parseFloat(nights), 1725, 3625);
+            document.getElementById("total").innerText =
+              "₹ " + totalprice + " /-";
+          });
+      });
+      function add(num1, num2, num3) {
+        let sum = num1 + num2 + num3;
+        return sum;
+      }
+    </script>
+  </body>
+</html>
